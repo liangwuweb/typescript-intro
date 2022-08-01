@@ -1,16 +1,12 @@
-// Tuples -- fix length of array, each value is different type
-// useful for two values, key value pairs
-let user: [number, string] = [1, 'Mosh'];
+function calculateTax(income: number, taxYear = 2022): number {
+  if (taxYear < 2022) 
+    return income * 1.2;
+  return income * 1.3;
 
-// Enums
-// const small = 1;
-// const medium = 2;
-// const large = 3;
+}
 
-enum Size { Small, Medium, Large }
-let mySize: Size = Size.Medium;
+console.log(calculateTax(80_000, 2023));
 
-console.log(mySize);
 
 
 

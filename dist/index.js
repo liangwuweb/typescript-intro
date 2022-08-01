@@ -1,11 +1,11 @@
 "use strict";
-let user = [1, 'Mosh'];
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 0] = "Small";
-    Size[Size["Medium"] = 1] = "Medium";
-    Size[Size["Large"] = 2] = "Large";
-})(Size || (Size = {}));
-let mySize = Size.Medium;
-console.log(mySize);
+function calculateTax(income) {
+    if (income < 50000) {
+        return income * 1.2;
+    }
+    else {
+        return income * 1.3;
+    }
+}
+console.log(calculateTax(10));
 //# sourceMappingURL=index.js.map
