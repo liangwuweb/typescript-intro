@@ -1,5 +1,11 @@
-// literal types
-type Quantity = 50 | 100;
-let quantity: Quantity = 100;
+// nullable types
+function greet(name: string | null | undefined ) {
+  if (name) {
+    console.log(name.toUpperCase());
+  } else {
+    console.log('null or undefined detected! Please input valid value.')
+  }
+  
+}
 
-type Metric = 'cm' | 'inch';
+greet(null);
