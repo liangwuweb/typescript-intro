@@ -1,11 +1,10 @@
 "use strict";
-function calculateTax(income) {
-    if (income < 50000) {
-        return income * 1.2;
+let employee = {
+    id: 1,
+    name: 'Mosh',
+    retire: (date) => {
+        console.log(date);
     }
-    else {
-        return income * 1.3;
-    }
-}
-console.log(calculateTax(10));
+};
+console.log(employee.retire(new Date()));
 //# sourceMappingURL=index.js.map
