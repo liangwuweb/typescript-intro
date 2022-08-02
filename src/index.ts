@@ -1,20 +1,16 @@
-// Type Aliases
-type Employee = {
-  readonly id: number,
-  name:string,
-  retire: (date: Date) => void
-} 
-
-
-
-let employee: Employee = { 
-  id: 1, 
-  name: 'Mosh', 
-  retire: (date: Date) => {
-    console.log(date);
+// Union Types
+function kgToLbs(weight: number | string) {
+  // Narrowing
+  if (typeof weight === 'number') {
+    return weight * 2; 
+  }
+  else {
+      return parseInt(weight) * 3;
   }
 }
 
+console.log(kgToLbs(10));
+console.log(kgToLbs('20'));
 
 
 
